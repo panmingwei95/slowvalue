@@ -1,0 +1,18 @@
+{{- /*
+  注入到 <head> 末尾。站点级覆盖文件，不会影响 themes/PaperMod 内部实现。
+*/ -}}
+
+{{- /* KaTeX 样式：仅当本页出现公式时加载（render-passthrough.html 里打的标记） */ -}}
+{{- if .Store.Get "hasMath" -}}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+{{- end -}}
+
+{{- /*
+  可用扩展点示例（按需取消注释）：
+
+  1) 自定义 CSS —— 追加到 assets/css/extended/custom.css 后，PaperMod 会自动合并；
+  2) 评论系统（Giscus / Utterances 等）：
+     <script src="https://giscus.app/client.js" data-repo="用户名/仓库" ... async></script>
+  3) 统计脚本（如不蒜子）：
+     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+*/ -}}

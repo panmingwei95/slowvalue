@@ -1,0 +1,195 @@
+# ============================================================================
+#  潘铭尉的博客 · Hugo + PaperMod 配置
+#  主题: https://github.com/adityatelange/hugo-PaperMod  (submodule, themes/PaperMod)
+#  要求: Hugo >= v0.146.0（扩展版），本项目使用 v0.166.0 extended
+# ============================================================================
+
+# GitHub Pages 部署时，CI 会用 actions/configure-pages 的实际地址覆盖此项，
+# 所以这里填的是「本地构建」与「默认线上地址」。绑定自有域名后改成 https://panmingwei.de5.net/
+baseURL: "https://panmingwei95.github.io/"
+title: "潘铭尉的博客"
+copyright: "© 2026 潘铭尉"
+theme: PaperMod
+
+locale: zh-cn # Hugo ≥ v0.158 用 locale 取代已废弃的 languageCode
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true # 中文按字计数，阅读时长更准确
+
+# 语言块：PaperMod 的 baseof.html 用 {{ site.Language }} 输出 <html lang=...>，
+# 而它取的是这里的语言 key；不声明语言块时会回落成 en，所以必须显式列出。
+languages:
+  zh:
+    locale: zh-cn # 取代已废弃的 languageCode，同时供 RSS 的 <language> 使用
+    label: 中文 # 取代已废弃的 languageName
+    weight: 1
+
+enableRobotsTXT: true
+enableEmoji: true
+enableInlineShortcodes: true
+
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+# 分页：每页 10 篇（Hugo 0.128+ 使用 pagination.pagerSize）
+pagination:
+  pagerSize: 10
+
+# 首页额外输出 JSON（搜索索引）；搜索功能依赖 /index.json
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+  section:
+    - HTML
+    - RSS
+
+# 分类体系
+taxonomies:
+  category: categories
+  tag: tags
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# 顶部导航
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 30
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 40
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 50
+    - identifier: about
+      name: 关于
+      url: /about/
+      weight: 60
+
+params:
+  env: production # production 才会输出 opengraph / twitter-cards / schema
+  title: "潘铭尉的博客"
+  description: "记录投资、阅读与内容创作的思考"
+  keywords: [价值投资, 巴菲特, 段永平, 读书笔记, 博客]
+  author: "潘铭尉"
+  DateFormat: "2006-01-02"
+  defaultTheme: auto # auto / dark / light
+  disableThemeToggle: false
+
+  # —— 文章页元信息开关 ——
+  ShowReadingTime: true
+  ShowWordCount: false # 中文字数统计意义有限，按需打开
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false # 全局默认不展开目录，单篇文章可用 showToc: true 覆盖
+  tocopen: false
+
+  # —— 站点图标 ——
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    disableHLJS: false
+    disableFingerprinting: false
+
+  label:
+    text: "首页"
+
+  # —— 首页样式：Home-Info 模式 ——
+  homeInfoParams:
+    Title: "你好，我是潘铭尉 👋"
+    Content: >
+      在这里记录价值投资的学习与思考、读书笔记，以及内容创作过程中的实践。
+      欢迎通过下方图标或留言与我交流。
+
+  # profileMode 与 homeInfoParams 二选一；需要头像卡片时把 enabled 改成 true
+  profileMode:
+    enabled: false
+    title: "潘铭尉"
+    subtitle: "价值投资 · 读书 · 内容创作"
+    imageUrl: ""
+    imageWidth: 120
+    imageHeight: 120
+    imageTitle: ""
+    buttons:
+      - name: 文章
+        url: /posts/
+      - name: 标签
+        url: /tags/
+
+  # —— 社交图标（name 取主题内置名：github / x / rss / wechat / telegram / mail …） ——
+  socialIcons:
+    - name: github
+      url: "https://github.com/"
+    - name: rss
+      url: "index.xml"
+
+  # —— 封面图全局策略 ——
+  cover:
+    hidden: false # 全站隐藏（仍保留在结构化数据中）
+    hiddenInList: true # 列表页不显示
+    hiddenInSingle: false
+
+  # —— 搜索（Fuse.js 参数） ——
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10
+    keys: ["title", "permalink", "summary", "content"]
+
+# Chroma 代码高亮
+pygmentsUseClasses: true
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # 允许正文内嵌 HTML
+    extensions:
+      passthrough:
+        enable: true # 让 $公式$ 原样透传，交给 render-passthrough.html 用 KaTeX 渲染
+        delimiters:
+          block:
+            - ['\[', '\]']
+            - ['$$', '$$']
+          inline:
+            - ['\(', '\)']
+            - ['$', '$']
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4

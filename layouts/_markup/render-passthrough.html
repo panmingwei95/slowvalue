@@ -1,0 +1,14 @@
+{{- /*
+  数学公式渲染钩子（服务端 KaTeX，无需页面加载 JS）
+  配合 hugo.yaml 中 markup.goldmark.extensions.passthrough.enable = true 使用，
+  正文里的 $行内公式$ 与 $$行内块公式$$ 会被渲染成 HTML + MathML。
+*/ -}}
+{{- $opts := dict "output" "htmlAndMathml" "displayMode" (eq .Type "block") -}}
+{{- with try (transform.ToMath .Inner $opts) -}}
+  {{- with .Err -}}
+    {{- errorf "公式渲染失败（%s）：%s" $.Position . -}}
+  {{- else -}}
+    {{- $.Page.Store.Set "hasMath" true -}}
+    {{- .Value -}}
+  {{- end -}}
+{{- end -}}
