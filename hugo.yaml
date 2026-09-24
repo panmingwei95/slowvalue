@@ -7,7 +7,8 @@
 # GitHub Pages 部署时，CI 会用 actions/configure-pages 的实际地址覆盖此项，
 # 所以这里填的是「本地构建」与「默认线上地址」。绑定自有域名后改成 https://panmingwei.de5.net/
 #baseURL: "https://panmingwei95.github.io/"
-baseURL: "https://slowvalue.pages.dev/"
+#baseURL: "https://slowvalue.pages.dev/"
+baseURL: "https://panmingwei.de5.net/"
 
 title: "潘铭尉的博客"
 copyright: "© 2026 潘铭尉"
