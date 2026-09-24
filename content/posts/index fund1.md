@@ -1,6 +1,6 @@
 ---
-title: 普通投资者是否应该投资指数基金？
-date: 2026-09-24T15:00:00+08:00
+title: 查理芒格：普通投资者是否应该投资指数基金？
+date: 2026-09-22T15:00:00+08:00
 draft: false
 author: 潘铭尉
 description:
@@ -10,6 +10,7 @@ categories:
 tags:
   - 芒格
   - 查理芒格
+  - 指数基金
 keywords:
 showToc: true
 TocOpen: true
