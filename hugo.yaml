@@ -126,11 +126,13 @@ params:
     text: "首页"
 
   # —— 首页样式：Home-Info 模式 ——
+  
   homeInfoParams:
     Title: "你好，我是潘铭尉 👋"
     Content: >
       在这里记录价值投资的学习与思考、读书笔记，以及内容创作过程中的实践。
       欢迎通过下方图标或留言与我交流。
+     
 
   # profileMode 与 homeInfoParams 二选一；需要头像卡片时把 enabled 改成 true
   profileMode:

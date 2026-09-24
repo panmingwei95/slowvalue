@@ -1,13 +1,20 @@
 ---
-title: "博客搭建完成：Hugo + PaperMod"
+title: 博客搭建完成：Hugo + PaperMod
 date: 2026-09-20T15:00:00+08:00
-draft: false
-author: "潘铭尉"
-description: "记录本站的技术选型：Hugo 生成静态站，PaperMod 提供主题，并演示主题支持的各项写作能力。"
-summary: "Hugo + PaperMod 的搭建记录，同时作为文章格式的演示模板（目录、代码、图片、折叠、表格、引用、脚注）。"
-categories: ["创作实践"]
-tags: ["Hugo", "PaperMod", "工具链"]
-keywords: ["Hugo", "PaperMod", "静态博客"]
+draft: true
+author: 潘铭尉
+description: 记录本站的技术选型：Hugo 生成静态站，PaperMod 提供主题，并演示主题支持的各项写作能力。
+summary: Hugo + PaperMod 的搭建记录，同时作为文章格式的演示模板（目录、代码、图片、折叠、表格、引用、脚注）。
+categories:
+  - 创作实践
+tags:
+  - Hugo
+  - PaperMod
+  - 工具链
+keywords:
+  - Hugo
+  - PaperMod
+  - 静态博客
 showToc: true
 TocOpen: true
 comments: false
@@ -17,7 +24,7 @@ ShowPostNavLinks: true
 UseHugoToc: true
 cover:
   image: ""
-  alt: "站点封面"
+  alt: 站点封面
   caption: ""
   hidden: true
   hiddenInList: true
