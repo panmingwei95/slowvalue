@@ -105,7 +105,7 @@ params:
   ShowShareButtons: false # 全站关闭文章/页面页尾的分享图标行（X、LinkedIn、Reddit…）
   hideAuthor: true # 去掉文章元信息里的作者名（<meta name=author> 与结构化数据保留，对 SEO 有利）
   ShowPostNavLinks: true
-  ShowBreadCrumbs: true
+  ShowBreadCrumbs: false # 全站关闭面包屑：站点层级扁平，且各页原先有/无不一
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
