@@ -11,7 +11,7 @@
 baseURL: "https://panmingwei.de5.net/"
 
 title: "潘铭尉-坚守价值 . 慢慢变富"
-copyright: "© 2026 潘铭尉"
+copyright: "© 2026 [潘铭尉](https://panmingwei.de5.net/)"
 theme: PaperMod
 
 locale: zh-cn # Hugo ≥ v0.158 用 locale 取代已废弃的 languageCode
@@ -105,7 +105,7 @@ params:
   ShowCodeCopyButtons: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
+  disableSpecial1stPost: true # 首页不再给第一篇大卡片特写，全部走统一的 post-entry 列表卡片
   disableScrollToTop: false
   comments: false
   hidemeta: false

@@ -4,6 +4,7 @@ url: "/about/"
 summary: "关于这个博客和我"
 searchHidden: true # 不进入站内搜索结果
 ShowBreadCrumbs: false
+disableShare: true # 隐藏页尾 X / LinkedIn / Reddit… 分享图标行
 ---
 
 ## 关于我
