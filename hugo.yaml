@@ -10,7 +10,7 @@
 #baseURL: "https://slowvalue.pages.dev/"
 baseURL: "https://panmingwei.de5.net/"
 
-title: "潘铭尉|坚守价值.慢慢变富"
+title: "潘铭尉-坚守价值 . 慢慢变富"
 copyright: "© 2026 潘铭尉"
 theme: PaperMod
 
@@ -127,11 +127,12 @@ params:
 
   # —— 首页样式：Home-Info 模式 ——
   
-  homeInfoParams:
-    Title: "你好，我是潘铭尉 👋"
-    Content: >
-      在这里记录价值投资的学习与思考、读书笔记，以及内容创作过程中的实践。
-      欢迎通过下方图标或留言与我交流。
+  #homeInfoParams:
+  
+   # Title: "你好，我是潘铭尉 👋"
+    #Content: >
+      #在这里记录价值投资的学习与思考、读书笔记，以及内容创作过程中的实践。
+      #欢迎通过下方图标或留言与我交流。
      
 
   # profileMode 与 homeInfoParams 二选一；需要头像卡片时把 enabled 改成 true
