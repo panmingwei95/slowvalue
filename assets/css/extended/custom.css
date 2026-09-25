@@ -2,6 +2,11 @@
    站点级自定义样式（PaperMod 会自动合并 assets/css/extended/*.css，且晚于主题样式加载）
    ============================================================================ */
 
+/* —— 文章内容页标题：主题原值 40px，按你的要求缩小 20% —— */
+.post-title {
+    font-size: 32px;
+}
+
 /* —— 页脚 —— */
 /* 页脚链接：去掉下划线，仅保留 hover 变色 */
 .footer a {
@@ -22,13 +27,6 @@
 
 .footer-stats span + span {
     margin-inline-start: 10px;
-}
-
-/* —— 文章阅读数 —— */
-.post-views {
-    margin: 24px 0 0;
-    font-size: 14px;
-    color: var(--secondary);
 }
 
 /* —— 不蒜子：数据返回前先隐藏容器，避免闪现占位符或空白 —— */

@@ -15,7 +15,6 @@ keywords:
 showToc: true
 TocOpen: true
 comments: false
-ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 UseHugoToc: true

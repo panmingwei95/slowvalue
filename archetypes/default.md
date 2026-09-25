@@ -18,7 +18,6 @@ disableShare: false
 disableHLJS: false
 hideSummary: false
 searchHidden: false       # 设为 true 则不进入站内搜索
-ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 ShowWordCount: false

@@ -14,7 +14,6 @@ comments: false
 disableShare: false
 hideSummary: false
 searchHidden: false
-ShowReadingTime: true
 ShowBreadCrumbs: true
 ShowPostNavLinks: true
 UseHugoToc: true

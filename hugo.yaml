@@ -100,7 +100,7 @@ params:
   disableThemeToggle: false
 
   # —— 文章页元信息开关 ——
-  ShowReadingTime: true
+  ShowReadingTime: false # 去掉列表页/内容页的「阅读 N 分钟」，位置改由文章阅读数占据
   ShowWordCount: false # 中文字数统计意义有限，按需打开
   ShowShareButtons: false # 全站关闭文章/页面页尾的分享图标行（X、LinkedIn、Reddit…）
   hideAuthor: true # 去掉文章元信息里的作者名（<meta name=author> 与结构化数据保留，对 SEO 有利）
