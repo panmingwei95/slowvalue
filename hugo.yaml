@@ -10,7 +10,7 @@
 #baseURL: "https://slowvalue.pages.dev/"
 baseURL: "https://panmingwei.de5.net/"
 
-title: "潘铭尉的博客"
+title: "潘铭尉|坚守价值.慢慢变富"
 copyright: "© 2026 潘铭尉"
 theme: PaperMod
 
@@ -92,7 +92,7 @@ params:
   description: "记录投资、阅读与内容创作的思考"
   keywords: [价值投资, 巴菲特, 段永平, 读书笔记, 博客]
   author: "潘铭尉"
-  DateFormat: "2006-01-02"
+  DateFormat: "2006-01-02 15:04"
   defaultTheme: auto # auto / dark / light
   disableThemeToggle: false
 

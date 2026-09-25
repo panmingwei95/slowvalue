@@ -1,6 +1,7 @@
 ---
-title: "{{ replace .File.ContentBaseName `-` ` ` }}"
-date: {{ .Date }}
+title: '{{ replace .File.ContentBaseName `-` ` ` | title }}'
+date: '{{ time.Now.Format "2006-01-02T15:04:05-07:00" }}'
+slug: "" 
 draft: true
 author: "潘铭尉"
 description: ""
