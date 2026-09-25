@@ -1,0 +1,5 @@
+{{- /* 页脚自定义区域：不蒜子（Busuanzi）访问统计脚本 */ -}}
+{{- /* 本地预览（baseURL 含 localhost）不加载，避免污染线上计数；正式构建自动启用 */ -}}
+{{- if not (strings.Contains site.BaseURL "localhost") }}
+<script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{{- end }}

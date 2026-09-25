@@ -2,7 +2,38 @@
    站点级自定义样式（PaperMod 会自动合并 assets/css/extended/*.css，且晚于主题样式加载）
    ============================================================================ */
 
+/* —— 页脚 —— */
 /* 页脚链接：去掉下划线，仅保留 hover 变色 */
 .footer a {
     text-decoration: none;
+}
+
+/* 页脚多了访问统计块之后，主题的 .footer span:last-child 不再命中「坚守价值 . 慢慢变富」，
+   这里补回来，避免小屏折行 */
+.footer > span:last-of-type {
+    white-space: nowrap;
+}
+
+.footer-stats {
+    margin-top: 6px;
+    font-size: 12px;
+    color: var(--secondary);
+}
+
+.footer-stats span + span {
+    margin-inline-start: 10px;
+}
+
+/* —— 文章阅读数 —— */
+.post-views {
+    margin: 24px 0 0;
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+/* —— 不蒜子：数据返回前先隐藏容器，避免闪现占位符或空白 —— */
+#busuanzi_container_page_pv,
+#busuanzi_container_site_pv,
+#busuanzi_container_site_uv {
+    display: none;
 }

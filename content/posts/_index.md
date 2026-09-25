@@ -1,5 +1,5 @@
 ---
-title: "文章"
-description: "全部文章，按时间倒序排列"
+title: 文章
+description: 价值投资的秘诀：无它，就是每天写点什么！
 ---
 

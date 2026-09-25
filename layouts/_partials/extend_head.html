@@ -16,3 +16,12 @@
   3) 统计脚本（如不蒜子）：
      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 */ -}}
+
+{{- /* 关于页：隐藏「关于」标题，页面直接展示正文（h1 仍保留在 DOM 中供爬虫识别） */ -}}
+{{- if eq .RelPermalink "/about/" }}
+<style>
+    .post-single .post-header {
+        display: none;
+    }
+</style>
+{{- end }}

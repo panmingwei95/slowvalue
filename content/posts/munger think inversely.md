@@ -1,9 +1,12 @@
 ---
 title: 查理芒格：投资一定要学会逆向思维！
+slug: munger-invert-always-invert
+aliases:
+  - /posts/munger-think-inversely/ # 旧地址保留 301，避免丢链接与收录
 date: 2026-09-24T15:00:00+08:00
 draft: false
 author: 潘铭尉
-description:
+description: 芒格的逆向思维：遇到多年解决不了的问题，反过来想，总是反过来想。与其问投资如何赚钱，不如先想清楚投资如何亏钱——不看公司做什么、不关心公司赚不赚钱、不问公司值多少钱，闭着眼睛买，再频繁短线交易，三五年后结果自明。
 summary:
 categories:
   - 查理芒格

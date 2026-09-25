@@ -1,9 +1,12 @@
 ---
 title: 查理芒格：普通投资者是否应该投资指数基金？
+slug: munger-ordinary-investors-index-funds
+aliases:
+  - /posts/index-fund1/ # 旧地址保留 301，避免丢链接与收录
 date: 2026-09-22T15:00:00+08:00
 draft: false
 author: 潘铭尉
-description:
+description: 芒格认为，业余投资者要不要买指数基金，只需回答两个问题：自己的投资能力是否高于市场平均水平，能不能找到长期跑赢大盘的基金经理。他还提醒，判断投资能力和优秀程度不能看短期业绩，而要看 5 年甚至 10 年的长期结果。
 summary:
 categories:
   - 查理芒格

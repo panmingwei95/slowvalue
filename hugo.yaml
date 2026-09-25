@@ -49,6 +49,9 @@ outputs:
     - HTML
     - RSS
 
+# 主内容分区：显式声明，PaperMod 的首页/归档列表取这里的内容（避免 Hugo 自动猜测猜错）
+mainsections: ["posts"]
+
 # 分类体系
 taxonomies:
   category: categories
@@ -70,7 +73,7 @@ menu:
       url: /archives/
       weight: 20
     - identifier: categories
-      name: 分类
+      name: 专栏
       url: /categories/
       weight: 30
     - identifier: tags
@@ -100,6 +103,7 @@ params:
   ShowReadingTime: true
   ShowWordCount: false # 中文字数统计意义有限，按需打开
   ShowShareButtons: false # 全站关闭文章/页面页尾的分享图标行（X、LinkedIn、Reddit…）
+  hideAuthor: true # 去掉文章元信息里的作者名（<meta name=author> 与结构化数据保留，对 SEO 有利）
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -173,6 +177,19 @@ params:
     minMatchCharLength: 0
     limit: 10
     keys: ["title", "permalink", "summary", "content"]
+
+  # —— 结构化数据（schema.org） ——
+  schema:
+    publisherType: Person # 个人博客：作者实体用 Person，比默认的 Organization 更准确
+    # sameAs: # 你在其它平台的主页（知乎 / 雪球 / X / GitHub…），填了有助于搜索引擎识别作者实体
+    #   - "https://www.zhihu.com/people/xxxx"
+
+  # —— 搜索引擎站长验证：拿到验证码后取消注释、填入、重新部署即可 ——
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "Google Search Console 的 content 值"
+  #   bing:
+  #     SiteVerificationTag: "Bing Webmaster 的 content 值"
 
 # Chroma 代码高亮
 pygmentsUseClasses: true
