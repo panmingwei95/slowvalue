@@ -10,7 +10,7 @@
 #baseURL: "https://slowvalue.pages.dev/"
 baseURL: "https://panmingwei.de5.net/"
 
-title: "潘铭尉-坚守价值 . 慢慢变富"
+title: "潘铭尉 - 坚守价值 . 慢慢变富"
 copyright: "© 2026 [潘铭尉](https://panmingwei.de5.net/)"
 theme: PaperMod
 
@@ -99,7 +99,7 @@ params:
   # —— 文章页元信息开关 ——
   ShowReadingTime: true
   ShowWordCount: false # 中文字数统计意义有限，按需打开
-  ShowShareButtons: true
+  ShowShareButtons: false # 全站关闭文章/页面页尾的分享图标行（X、LinkedIn、Reddit…）
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
