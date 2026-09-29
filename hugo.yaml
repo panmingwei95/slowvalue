@@ -95,6 +95,7 @@ params:
   description: "记录投资、阅读与内容创作的思考"
   keywords: [价值投资, 巴菲特, 段永平, 读书笔记, 博客]
   author: "潘铭尉"
+  images: ["/og.png"] # 默认分享图：无封面的页面统一用它作 og:image / twitter:image
   DateFormat: "2006-01-02 15:04"
   defaultTheme: auto # auto / dark / light
   disableThemeToggle: false
@@ -119,10 +120,11 @@ params:
 
   # —— 站点图标 ——
   assets:
-    favicon: "/favicon.ico"
+    favicon: "/logo.png" # 512×512 PNG：既作图标兜底，也作结构化数据的 image / publisher.logo（Google 不接受 .ico 当 logo）
     favicon16x16: "/favicon-16x16.png"
     favicon32x32: "/favicon-32x32.png"
     apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg" # Safari「固定标签」用的单色剪影（static/ 下，由 logo 轮廓描摹生成）
     disableHLJS: false
     disableFingerprinting: false
 
